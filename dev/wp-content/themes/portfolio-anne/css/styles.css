@@ -1096,7 +1096,8 @@ body {
  */
 /* line 10, ../sass/components/_contact.scss */
 .content__title {
-  width: 400px;
+  width: 44.444%;
+  /*400px*/
   font-size: 2em;
   font-family: "Questa", "Baskerville", Times, serif;
   margin-bottom: 1.5em;
@@ -1105,7 +1106,8 @@ body {
 
 /* line 19, ../sass/components/_contact.scss */
 .wpcf7-form {
-  width: 500px;
+  width: 55.555%;
+  /*500px*/
 }
 
 /* line 23, ../sass/components/_contact.scss */
@@ -1125,10 +1127,14 @@ input {
 
 /* line 34, ../sass/components/_contact.scss */
 .wpcf7-form-control {
-  width: 500px;
-  height: 45px;
-  padding-top: 15px;
-  padding-bottom: 5px;
+  width: 100%;
+  /*500px*/
+  height: 2.812em;
+  /*45px*/
+  padding-top: 0.937em;
+  /*15px*/
+  padding-bottom: 0.312em;
+  /*5px*/
   vertical-align: bottom;
   border: none;
   background: transparent;
@@ -1154,12 +1160,15 @@ input {
 
 /* line 56, ../sass/components/_contact.scss */
 .wpcf7-textarea {
-  width: 500px;
-  padding: 20px;
+  width: 100%;
+  /*500px*/
+  padding: 1.25em 4%;
+  /*20px*/
   border: none;
   background: #D5D1D6;
   resize: none;
-  height: 100px;
+  height: 6.25em;
+  /*100px*/
   margin-bottom: 2em;
 }
 
@@ -1173,10 +1182,13 @@ input {
 .wpcf7-submit {
   border: none;
   background: #3d3057;
-  width: 250px;
+  width: 50%;
+  /*250px*/
   color: white;
-  height: 40px;
+  height: 2.5em;
+  /*40px*/
   font-size: 1em;
   line-height: 1em;
-  padding: 5px;
+  padding: 0.312em 1%;
+  /*5px*/
 }
