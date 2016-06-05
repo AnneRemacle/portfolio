@@ -863,43 +863,52 @@ body {
   background: #B39DC7;
   transition: background .5s ease;
 }
+/* line 40, ../sass/components/_single-project.scss */
+.project__github {
+  display: block;
+  width: 44.444%;
+  /*400px*/
+  margin: 2em auto;
+  text-decoration: none;
+  color: #3d3057;
+}
 
-/* line 42, ../sass/components/_single-project.scss */
+/* line 49, ../sass/components/_single-project.scss */
 .part {
   margin: 2em 0;
 }
-/* line 45, ../sass/components/_single-project.scss */
+/* line 52, ../sass/components/_single-project.scss */
 .part__first--left {
   display: inline-block;
   width: 47%;
   vertical-align: middle;
 }
-/* line 50, ../sass/components/_single-project.scss */
+/* line 57, ../sass/components/_single-project.scss */
 .part__first--right {
   display: inline-block;
   width: 47%;
   vertical-align: middle;
   margin-left: 5%;
 }
-/* line 57, ../sass/components/_single-project.scss */
+/* line 64, ../sass/components/_single-project.scss */
 .part__second {
   display: inline-block;
   width: 47%;
 }
-/* line 62, ../sass/components/_single-project.scss */
+/* line 69, ../sass/components/_single-project.scss */
 .part__third--right {
   display: inline-block;
   vertical-align: middle;
   width: 47%;
   margin-left: 5%;
 }
-/* line 68, ../sass/components/_single-project.scss */
+/* line 75, ../sass/components/_single-project.scss */
 .part__third--left {
   display: inline-block;
   vertical-align: middle;
   width: 47%;
 }
-/* line 74, ../sass/components/_single-project.scss */
+/* line 81, ../sass/components/_single-project.scss */
 .part__fourth {
   display: inline-block;
   width: 47%;
@@ -978,7 +987,7 @@ body {
 }
 /* line 53, ../sass/components/_cv.scss */
 .cv__git {
-  display: inline-block;
+  display: block;
   text-align: center;
   width: 11.111%;
   /*100px*/

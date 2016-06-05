@@ -22,9 +22,9 @@
             </span>
         </h2>
 
-        <figure class="project__first">
+        <figure class="project__first content__work work">
             <?php $image = get_field('presentation_img'); ?>
-            <img class="project__first--img" src="<?php echo $image['url']; ?>" alt="" />
+            <img class="project__first--img work__img" src="<?php echo $image['url']; ?>" alt="" />
         </figure>
 
         <section class="project__section part__first part">
@@ -53,15 +53,15 @@
             </div>
 
             <div class="part__third part">
-                <figure class="part__third--right">
-                    <?php $image = get_field('image_2'); ?>
-                    <img class="part__third--img" src="<?php echo $image['url']; ?>" alt="" />
-                </figure>
                 <div class="part__third--left">
                     <p class="project__text">
                         <?php the_field('realisation_content_second'); ?>
                     </p>
                 </div>
+                <figure class="part__third--right">
+                    <?php $image = get_field('image_2'); ?>
+                    <img class="part__third--img" src="<?php echo $image['url']; ?>" alt="" />
+                </figure>
             </div>
 
             <div class="part__fourth part">
@@ -94,7 +94,8 @@
             </div>
 
             <div class="project__button">
-                <a href="" class="project__button--link">Voir le projet</a>
+                <a href="http://<?php the_field('url_site'); ?>" class="project__button--link">Voir le projet</a>
+                <a href="http://<?php the_field('github_url'); ?>" class="project__github">Repo Github</a>
             </div>
 
         </section>

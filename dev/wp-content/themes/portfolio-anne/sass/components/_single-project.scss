@@ -37,6 +37,13 @@
             transition: background .5s ease;
         }
     }
+    &__github {
+        display: block;
+        width: 44.444%; /*400px*/
+        margin: 2em auto;
+        text-decoration: none;
+        color: $darkColor;
+    }
 }
 
 .part {
