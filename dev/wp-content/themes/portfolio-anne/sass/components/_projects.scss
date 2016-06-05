@@ -9,7 +9,6 @@
 .work {
     display: inline-block;
     width: 44.444%; /*400px*/ 
-    height: 25em; /*400px*/
     margin-bottom: 4em; /*64px*/
     vertical-align: top;
     position: relative;
@@ -26,7 +25,6 @@
 
     &__img {
         width: 100%; /*400px*/ 
-        height: 25em; /*400px*/
        -webkit-transition: all 0.4s ease-in-out 0.5s;
        -moz-transition: all 0.4s ease-in-out 0.5s;
        -o-transition: all 0.4s ease-in-out 0.5s;
@@ -36,7 +34,7 @@
     &__mask {
        background-color: rgba( 61, 48, 87, 0.7 );
        width: 100%; /*400px*/ 
-       height: 25em; /*400px*/
+       height: 100%;
        position: absolute;
        top:0;
        left:0;
@@ -70,9 +68,8 @@
     &__more {
          display: inline-block;
          text-decoration: none;
-         padding: 7px 14px;
+         padding: 0.437em 3.5%; /*7px 14px*/
          width: 100%; /*400px*/ 
-         height: 25em; /*400px*/
          margin: 0 auto;
          text-align: center;
          color: #fff;
@@ -90,7 +87,6 @@
        -ms-transition-delay: 0s;
        transition-delay: 0s;
        width:100%; /*400px*/ 
-        height: 25em; /*400px*/
     }
     &:hover .work__img, &-focus .work__img {
        -webkit-transition-delay: 0s;
@@ -115,3 +111,13 @@
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .work {
+        &__title {
+        margin: 1em 0 0 0;
+      }
+    }
+}
+
+

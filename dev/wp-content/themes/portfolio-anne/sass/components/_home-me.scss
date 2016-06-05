@@ -45,3 +45,22 @@
          margin-bottom: 0.8em;
      }
  }
+
+ @media screen and (max-width: 1000px) {
+    .me {
+        &__figure {
+            margin-bottom: 20em;
+        }
+        &__title {
+            width: 60%;
+        }
+        &__left {
+            width: 45%;
+            margin-left: 0;
+        }
+        &__right {
+            width: 45%;
+            margin-right: 0;
+        }
+    }
+ }

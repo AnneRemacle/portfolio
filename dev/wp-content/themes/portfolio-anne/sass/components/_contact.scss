@@ -70,12 +70,21 @@ input {
 .wpcf7-submit {
     border:none;
     background: $darkColor;
-    width: 50%; /*250px*/
+    width: 70%; /*250px*/
     color:white;
     height: 2.5em; /*40px*/
     font-size: 1em;
     line-height: 1em;
-    padding: 0.312em 1%; /*5px*/
+    padding: 0.5em; /*5px*/
+}
+
+@media screen and (max-width: 1000px) {
+    .wpcf7-form {
+     width: 70%; 
+    }
+    .wpcf7-submit {
+    width: 70%; 
+    }
 }
 
 

@@ -7,25 +7,25 @@
  */
 
 .header {
-    height: 250px;
+    height: 15.625em; /*250px*/
     position: relative;
-    margin-bottom: 150px;
+    margin-bottom: 9.375em; /*150px*/
 
     &__logo {
         display: block;
         background: url("../assets/img/logo.png") center no-repeat;
         background-size: contain;
-        width: 236px;
-        height: 191px;
+        width: 18.437%; /*236px*/
+        height: 11.93em; /*191px*/
         text-indent: -9999px;
         float:left;
         position: absolute;
-        top: 70px;
-        left: 200px;
+        top: 4.375em; /*70px*/
+        left: 15.62%; /*200px*/
     }
     &__nav {
         float: right;
-        margin: 8em 200px 0 0;
+        margin: 8em 15.62% 0 0; /*200px*/
     }
     &__link {
         display: inline-block;
@@ -36,7 +36,6 @@
         padding: 0.5em 1em;
         margin: 0 1em;
         position: relative;
-
         text-align: center;
     }
     &__link:hover, .header__link:focus {
@@ -73,4 +72,13 @@
 .header:before {
     @include kaduk('bottom-left', 20deg, 200%);
     @include gradient();
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        &__nav {
+        float: right;
+        margin: 12em 15.62% 0 0; 
+        }
+    }
 }

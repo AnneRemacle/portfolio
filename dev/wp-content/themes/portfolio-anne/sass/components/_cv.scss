@@ -131,3 +131,11 @@
  .experience {
      margin-top: 10px; /*10px*/
  }
+
+ @media screen and (max-width: 1000px) {
+    .cv {
+        &__git {
+         width: 20%; 
+        }
+    }
+}
