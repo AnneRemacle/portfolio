@@ -120,4 +120,12 @@
     }
 }
 
+@media screen and (max-width: 885px) {
+    .work {
+        &:nth-child(odd) {
+        margin-top: -12.5em; 
+      }
+    }
+}
+
 

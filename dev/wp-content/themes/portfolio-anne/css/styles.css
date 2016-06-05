@@ -370,6 +370,22 @@ body {
     margin: 12em 15.62% 0 0;
   }
 }
+@media screen and (max-width: 885px) {
+  /* line 88, ../sass/components/_header.scss */
+  .header__logo {
+    width: 20%;
+    /*236px*/
+    top: 3em;
+    /*70px*/
+    left: 10%;
+    /*200px*/
+  }
+  /* line 93, ../sass/components/_header.scss */
+  .header__nav {
+    float: right;
+    margin: 12em 10% 0 0;
+  }
+}
 /* Portfolio
  *
  * /sass/components/_content.scss
@@ -791,6 +807,12 @@ body {
     margin: 1em 0 0 0;
   }
 }
+@media screen and (max-width: 885px) {
+  /* line 125, ../sass/components/_projects.scss */
+  .work:nth-child(odd) {
+    margin-top: -12.5em;
+  }
+}
 /* Portfolio
  *
  * /sass/components/_project.scss
@@ -903,94 +925,109 @@ body {
   margin: 2em auto;
   text-decoration: none;
   color: #3d3057;
+  text-align: center;
 }
 
-/* line 49, ../sass/components/_single-project.scss */
+/* line 51, ../sass/components/_single-project.scss */
 .part {
   margin: 2em 0;
 }
-/* line 52, ../sass/components/_single-project.scss */
+/* line 54, ../sass/components/_single-project.scss */
 .part__first--left {
   display: inline-block;
   width: 47%;
   vertical-align: middle;
 }
-/* line 57, ../sass/components/_single-project.scss */
+/* line 59, ../sass/components/_single-project.scss */
 .part__first--right {
   display: inline-block;
   width: 47%;
   vertical-align: middle;
   margin-left: 5%;
 }
-/* line 64, ../sass/components/_single-project.scss */
+/* line 66, ../sass/components/_single-project.scss */
 .part__second {
   display: inline-block;
   width: 47%;
 }
-/* line 69, ../sass/components/_single-project.scss */
+/* line 71, ../sass/components/_single-project.scss */
 .part__third--right {
   display: inline-block;
   vertical-align: middle;
   width: 47%;
   margin-left: 5%;
 }
-/* line 75, ../sass/components/_single-project.scss */
+/* line 77, ../sass/components/_single-project.scss */
 .part__third--left {
   display: inline-block;
   vertical-align: middle;
   width: 47%;
 }
-/* line 81, ../sass/components/_single-project.scss */
+/* line 83, ../sass/components/_single-project.scss */
 .part__fourth {
   display: inline-block;
   width: 47%;
 }
 
 @media screen and (max-width: 1000px) {
-  /* line 89, ../sass/components/_single-project.scss */
+  /* line 94, ../sass/components/_single-project.scss */
+  .project__button {
+    width: 30%;
+  }
+  /* line 97, ../sass/components/_single-project.scss */
   .project__github {
     width: 60%;
   }
 
-  /* line 94, ../sass/components/_single-project.scss */
+  /* line 102, ../sass/components/_single-project.scss */
   .part {
     margin: 2em 0;
   }
-  /* line 97, ../sass/components/_single-project.scss */
+  /* line 105, ../sass/components/_single-project.scss */
   .part__first--left {
     display: block;
     width: 100%;
     text-align: center;
     margin-bottom: 2em;
   }
-  /* line 103, ../sass/components/_single-project.scss */
+  /* line 111, ../sass/components/_single-project.scss */
   .part__first--right {
     display: block;
     width: 100%;
     margin-left: 0;
   }
-  /* line 109, ../sass/components/_single-project.scss */
+  /* line 117, ../sass/components/_single-project.scss */
   .part__second {
     display: block;
     width: 100%;
   }
-  /* line 114, ../sass/components/_single-project.scss */
+  /* line 122, ../sass/components/_single-project.scss */
   .part__third--right {
     display: block;
     width: 100%;
     margin-left: 0;
     text-align: center;
   }
-  /* line 120, ../sass/components/_single-project.scss */
+  /* line 128, ../sass/components/_single-project.scss */
   .part__third--left {
     display: block;
     width: 100%;
     margin-bottom: 2em;
   }
-  /* line 126, ../sass/components/_single-project.scss */
+  /* line 134, ../sass/components/_single-project.scss */
   .part__fourth {
     width: 100%;
     display: block;
+  }
+  /* line 138, ../sass/components/_single-project.scss */
+  .part__last {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 885px) {
+  /* line 146, ../sass/components/_single-project.scss */
+  .project__button {
+    width: 30%;
   }
 }
 /* Portfolio

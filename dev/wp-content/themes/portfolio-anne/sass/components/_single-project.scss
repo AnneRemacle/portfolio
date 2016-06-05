@@ -43,6 +43,8 @@
         margin: 2em auto;
         text-decoration: none;
         color: $darkColor;
+        text-align: center;
+        
     }
 }
 
@@ -82,10 +84,16 @@
             display: inline-block;
             width: 47%;
     }
+    &__last {
+
+    }
 }
 
 @media screen and (max-width: 1000px) {
     .project {
+        &__button {
+            width: 30%;
+        }
         &__github {
             width: 60%; 
         }
@@ -126,6 +134,17 @@
         &__fourth {
             width: 100%;
             display: block;    
+        }
+        &__last {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 885px) {
+    .project {
+        &__button {
+            width: 30%;
         }
     }
 }

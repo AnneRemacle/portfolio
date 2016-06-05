@@ -82,3 +82,17 @@
         }
     }
 }
+
+@media screen and (max-width: 885px) {
+    .header {
+        &__logo {
+        width: 20%; /*236px*/
+        top: 3em; /*70px*/
+        left: 10%; /*200px*/
+    }
+        &__nav {
+        float: right;
+        margin: 12em 10% 0 0; 
+        }
+    }
+}
