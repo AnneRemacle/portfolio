@@ -1,2 +1,10 @@
 node_modules
 .sass-cache
+
+dev/*
+!dev/wp-content/
+dev/wp-content/*
+!dev/wp-content/themes/
+dev/wp-content/themes/*
+!dev/wp-content/themes/portfolio-anne/
+dev/wp-content/themes/portfolio-anne/.sass-cache

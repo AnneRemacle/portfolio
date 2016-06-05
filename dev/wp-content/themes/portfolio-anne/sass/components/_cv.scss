@@ -1,0 +1,133 @@
+/* Portfolio
+ *
+ * /sass/components/_cv.scss
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+
+ .cv {
+     position: relative;
+     margin: 0 auto;
+     &-top {
+         margin-bottom:  12.5em; /*200px*/
+     }
+     &__title {
+         font-family: $headingStack;
+         position:absolute;
+         top: -6.25em; /*100px*/
+         left: 11.111%; /*100px*/
+         color:white;
+         font-size:2em;
+     }
+     &__figure {
+         margin-bottom: 6.25em; /*100px*/
+     }
+     &__img {
+         display: block;
+         width: 33.333%; /*300px*/
+         height: auto;
+         margin: 0 auto;
+         position: absolute;
+         top:-1.562em; /*25px*/ 
+         right: 16.666%; /*150px*/
+     }
+     &-section {
+         margin-bottom: 1.875em; /*30px*/
+     }
+     &__sectionTitle {
+         margin-bottom: 1em;
+         font: 1.8em $headingStack;
+         color: $darkColor;
+     }
+     &__list {
+         margin-bottom: 1.875em;
+         &-title {
+             font-size: 1.5em;
+             font-family: $headingStack;
+         }
+         &-item {
+             margin-bottom: 0.625em; /*10px*/
+         }
+     }
+     &__git {
+         display: inline-block;
+         text-align: center;
+         width: 11.111%; /*100px*/ 
+         margin: 0 auto;
+         text-decoration: none;
+         color: $darkColor;
+         &-div {
+           
+         }
+         &--icon {
+             display: block;
+              width: 100%; /*100px*/ 
+              margin: 0 auto;
+              
+         }
+     }
+     &__git:hover, &__git:focus {
+         color: #998bb6;
+         transition: .3s ease;
+     }
+ }
+
+ .left, .right {
+     display: inline-block;
+     width: 42.222%; /*380px*/ 
+     vertical-align: top;
+     margin-bottom: 1.875em; /*30px*/ 
+ }
+ .left {
+     margin-right: 12.222%; /*110px*/
+     margin-top: 6.25em; /*100px*/
+ }
+
+ .infos {
+     position: absolute;
+     width: 38.888%; /*350px*/
+     top:3.437em; /*55px*/
+     left: 6.666%; /*60px*/
+     &__item {
+        margin-bottom: 1em;
+         padding-left: 3.333%; /*30px*/
+        &--icon {
+            font-family:'Glyphs';
+            display: inline-block;
+            padding-right: 1.111%; /*10px*/
+        }
+     }
+
+ }
+
+ .item {
+     &__title, &__date {
+         display: block;
+     }
+     &__title {
+        font-size: 1.2em;
+     }
+     &__date {
+        font-size: 0.8em;
+        margin-bottom: 0.5em;
+        margin-left: 0.5em;
+     }
+     &__star {
+         font-size: 1em;
+         margin-bottom: 0.5em;
+         margin-left: 0.5em;
+
+         &--rate {
+             font-size: 0.4em;
+         }
+     }
+
+ }
+
+ .competences {
+     margin-top: 4.375em; /*70px*/
+ }
+ .experience {
+     margin-top: 10px; /*10px*/
+ }

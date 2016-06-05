@@ -1,0 +1,36 @@
+/* Portfolio
+ *
+ * /sass/settings/_fonts.scss - Global fonts variables & fonts loading
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+
+$laborStack: 'Source Sans Pro', "Helvetica", Arial, sans-serif;
+$headingStack: 'Questa', "Baskerville", Times, serif;
+
+
+@font-face {
+    font-family: 'Glyphs';
+    src: url('../../assets/fonts/fontawesome/fontawesome-webfont.eot');
+    src: url('../../assets/fonts/fontawesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/fontawesome/fontawesome-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/fontawesome/fontawesome-webfont.woff') format('woff'),
+         url('../../assets/fonts/fontawesome/fontawesome-webfont.ttf') format('truetype'),
+         url('../../assets/fonts/fontawesome/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'questaregular';
+    src: url('../../assets/fonts/2-Questa_Regular-webfont.eot');
+    src: url('../../assets/fonts/2-Questa_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/2-Questa_Regular-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/2-Questa_Regular-webfont.woff') format('woff'),
+         url('../../assets/fonts/2-Questa_Regular-webfont.ttf') format('truetype'),
+         url('../../assets/fonts/2-Questa_Regular-webfont.svg#questaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

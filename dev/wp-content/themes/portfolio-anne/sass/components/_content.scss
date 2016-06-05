@@ -1,0 +1,23 @@
+/* Portfolio
+ *
+ * /sass/components/_content.scss
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+
+ .content {
+     width: 70.312%; /*900px*/
+     margin: 0 auto;
+ }
+
+.section {
+    &__title {
+        width: 44.444%; /*400px*/
+        font: 2em $headingStack;
+        margin-bottom: 1.5em;
+        float:left;
+        margin-right: 7.111%; /*64px*/
+    }
+}
+

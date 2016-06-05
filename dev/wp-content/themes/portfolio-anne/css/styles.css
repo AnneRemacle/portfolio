@@ -1,0 +1,1173 @@
+/* Portfolio
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+/* Portfolio
+ *
+ * /sass/settings/_colors.scss - variables for colors
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+/* Portfolio
+ *
+ * /sass/settings/_fonts.scss - Global fonts variables & fonts loading
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+@font-face {
+  font-family: 'Glyphs';
+  src: url("../../assets/fonts/fontawesome/fontawesome-webfont.eot");
+  src: url("../../assets/fonts/fontawesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/fontawesome/fontawesome-webfont.woff2") format("woff2"), url("../../assets/fonts/fontawesome/fontawesome-webfont.woff") format("woff"), url("../../assets/fonts/fontawesome/fontawesome-webfont.ttf") format("truetype"), url("../../assets/fonts/fontawesome/fontawesome-webfont.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'questaregular';
+  src: url("../../assets/fonts/2-Questa_Regular-webfont.eot");
+  src: url("../../assets/fonts/2-Questa_Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/2-Questa_Regular-webfont.woff2") format("woff2"), url("../../assets/fonts/2-Questa_Regular-webfont.woff") format("woff"), url("../../assets/fonts/2-Questa_Regular-webfont.ttf") format("truetype"), url("../../assets/fonts/2-Questa_Regular-webfont.svg#questaregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Portfolio
+ *
+ * /sass/tools/_utils.scss - Small utilities
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+/* line 9, ../sass/tools/_utils.scss */
+.hidden {
+  display: none;
+}
+
+/* line 13, ../sass/tools/_utils.scss */
+.sro {
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
+}
+
+/* line 19, ../sass/tools/_utils.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 25, ../sass/tools/_utils.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/*
+      MAIN MIXIN
+      Handcrafted By WhiteCube.
+      ---------------------------
+
+      Shapes, positions and sets a rotation to pseudo-element
+      in order to make a leaning border (with a background-image
+      if you want to).
+      The anchor point will be positionned exactly where you
+      want it, even if the pseudo-element's anchor point is
+      outside the parent-element.
+      Use this mixin along with your other styling rules inside
+      your pseudo-element in order to make something beautiful.
+
+      -----
+
+      @include kaduk( $position, $degrees, $width )
+
+      $position: string ('bottom-right'|'bottom-left'|'top-right'|'top-left');
+      $degrees: int (with 'deg' unit)
+      $width: int (with css width unit. Width of pseudo-element)
+
+      -----
+
+      # EXAMPLE - TEST IT
+      ---------------------------
+      In order to truly understand what this does,
+      test this code.
+
+      ## HTML
+      -------
+
+      <div class="kaduk-test"><p>Some content</p></div>
+
+      ## SCSS
+      -------
+
+      .kaduk-test{
+            position: relative;
+            width: 400px;
+            height: 200px;
+            background: #000;
+            &:before{
+                  @include kaduk('bottom-right', -3.5deg, 200%);
+                  background: rgba(#c8c8c8, 0.8);
+            }
+      }
+
+
+      # FUNCTIONS
+      ---------------------------
+*/
+/*
+      # MIXINS
+      ---------------------------
+*/
+/* CV Anne
+ *
+ * /sass/generic/_meyer-reset.scss - Eric Meyer's CSS reset - http://meyerweb.com/eric/tools/css/reset/
+ *
+ * coded by Anne
+ * started at 3/04/2016
+ */
+/* line 9, ../sass/generic/_meyer-reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 30, ../sass/generic/_meyer-reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 34, ../sass/generic/_meyer-reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 37, ../sass/generic/_meyer-reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 40, ../sass/generic/_meyer-reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 43, ../sass/generic/_meyer-reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 48, ../sass/generic/_meyer-reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CV Anne
+ *
+ * /sass/generic/_box-sizing.scss - box-sizing reset
+ *
+ * coded by Anne
+ * started at 3/04/2016
+ */
+/* line 9, ../sass/generic/_box-sizing.scss */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 15, ../sass/generic/_box-sizing.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* Portfolio
+ *
+ * /sass/base/_root.scss - Base styles for root element
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+/* line 9, ../sass/base/_root.scss */
+body {
+  background: #d0d0d0;
+  font: 100%/1.7 "Source Sans Pro", "Helvetica", Arial, sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Portfolio
+ *
+ * /sass/components/_header.scss
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+/* line 9, ../sass/components/_header.scss */
+.header {
+  height: 250px;
+  position: relative;
+  margin-bottom: 150px;
+}
+/* line 14, ../sass/components/_header.scss */
+.header__logo {
+  display: block;
+  background: url("../assets/img/logo.png") center no-repeat;
+  background-size: contain;
+  width: 236px;
+  height: 191px;
+  text-indent: -9999px;
+  float: left;
+  position: absolute;
+  top: 70px;
+  left: 200px;
+}
+/* line 26, ../sass/components/_header.scss */
+.header__nav {
+  float: right;
+  margin: 8em 200px 0 0;
+}
+/* line 30, ../sass/components/_header.scss */
+.header__link {
+  display: inline-block;
+  width: 115px;
+  text-decoration: none;
+  color: #d0d0d0;
+  font: 1.5em "Source Sans Pro", "Helvetica", Arial, sans-serif;
+  padding: 0.5em 1em;
+  margin: 0 1em;
+  position: relative;
+  text-align: center;
+}
+/* line 42, ../sass/components/_header.scss */
+.header__link:hover, .header .header__link:focus {
+  background: #d0d0d0;
+  color: #3d3057;
+  transition: .3s ease;
+}
+/* line 47, ../sass/components/_header.scss */
+.header__link:hover:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  border-bottom: 30px solid #d0d0d0;
+  border-right: 115px solid transparent;
+  margin-bottom: 1em;
+}
+/* line 59, ../sass/components/_header.scss */
+.header__link:hover:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -53px;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  border-top: 30px solid #d0d0d0;
+  border-left: 115px solid transparent;
+  margin-bottom: 1em;
+}
+
+/* line 73, ../sass/components/_header.scss */
+.header:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0;
+  width: 200%;
+  padding-bottom: 200%;
+  bottom: 0;
+  left: -50%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+  margin-bottom: 18.19851%;
+  background: linear-gradient(270deg, #3d3057, #6b5c8b);
+  background-size: 400% 400%;
+  -webkit-animation: HeaderGradient 10s ease infinite;
+  -moz-animation: HeaderGradient 10s ease infinite;
+  animation: HeaderGradient 10s ease infinite;
+}
+@-webkit-keyframes HeaderGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes HeaderGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes HeaderGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Portfolio
+ *
+ * /sass/components/_content.scss
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+/* line 9, ../sass/components/_content.scss */
+.content {
+  width: 70.312%;
+  /*900px*/
+  margin: 0 auto;
+}
+
+/* line 15, ../sass/components/_content.scss */
+.section__title {
+  width: 44.444%;
+  /*400px*/
+  font: 2em "Questa", "Baskerville", Times, serif;
+  margin-bottom: 1.5em;
+  float: left;
+  margin-right: 7.111%;
+  /*64px*/
+}
+
+/* Portfolio
+ *
+ * /sass/components/_footer.scss
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+/* line 9, ../sass/components/_footer.scss */
+.footer {
+  width: 100%;
+  height: 37.5em;
+  /*600px*/
+  position: relative;
+  overflow: hidden;
+}
+/* line 14, ../sass/components/_footer.scss */
+.footer__title {
+  color: #d0d0d0;
+  font: 1.5em "Questa", "Baskerville", Times, serif;
+  margin-left: 4em;
+}
+/* line 19, ../sass/components/_footer.scss */
+.footer__socials {
+  margin-left: 5.5em;
+}
+/* line 22, ../sass/components/_footer.scss */
+.footer__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #d0d0d0;
+  font-size: 1.5em;
+  padding: 1em 0.5em;
+}
+
+/* line 33, ../sass/components/_footer.scss */
+.footer:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0;
+  width: 200%;
+  padding-bottom: 200%;
+  top: 0;
+  left: -50%;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+  margin-top: -18.19851%;
+  background: linear-gradient(270deg, #3d3057, #6b5c8b);
+  background-size: 400% 400%;
+  -webkit-animation: HeaderGradient 10s ease infinite;
+  -moz-animation: HeaderGradient 10s ease infinite;
+  animation: HeaderGradient 10s ease infinite;
+}
+@-webkit-keyframes HeaderGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes HeaderGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes HeaderGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* line 39, ../sass/components/_footer.scss */
+.position {
+  position: absolute;
+  top: 15.625em;
+  /*250px*/
+  left: 16.666%;
+  /*150px*/
+}
+
+/* Portfolio
+ *
+ * /sass/components/_home-me.scss
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+/* line 9, ../sass/components/_home-me.scss */
+.me {
+  position: relative;
+}
+/* line 11, ../sass/components/_home-me.scss */
+.me__figure {
+  margin-bottom: 25em;
+  /*400px*/
+}
+/* line 14, ../sass/components/_home-me.scss */
+.me__img {
+  display: block;
+  width: 44.444%;
+  /*400px*/
+  height: auto;
+  margin: 0 auto;
+  position: absolute;
+  top: -3.125em;
+  /*50px*/
+  right: 27.777%;
+  /*250px*/
+}
+/* line 24, ../sass/components/_home-me.scss */
+.me__title {
+  width: 44.444%;
+  /*400px*/
+  margin: 2em auto 3em;
+  font: 2em "Questa", "Baskerville", Times, serif;
+  text-align: center;
+}
+/* line 29, ../sass/components/_home-me.scss */
+.me__title--deleted {
+  font-size: 0.6em;
+  text-decoration: line-through;
+}
+/* line 34, ../sass/components/_home-me.scss */
+.me__left {
+  float: left;
+  width: 33.333%;
+  /*300px*/
+  margin-left: 13.333%;
+  /*120px*/
+}
+/* line 39, ../sass/components/_home-me.scss */
+.me__right {
+  float: right;
+  width: 33.333%;
+  /*300px*/
+  margin-right: 13.333%;
+  /*120px*/
+}
+/* line 44, ../sass/components/_home-me.scss */
+.me__text {
+  margin-bottom: 0.8em;
+}
+
+/* Portfolio
+ *
+ * /sass/components/_home-buttons.scss
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+/* line 9, ../sass/components/_home-buttons.scss */
+.buttons {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  /*900px*/
+  margin: 5em auto;
+  text-align: center;
+}
+/* line 16, ../sass/components/_home-buttons.scss */
+.buttons__link {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  width: 38.888%;
+  /*350px*/
+  font-size: 2em;
+  color: #d0d0d0;
+  padding: 0.5em 1em;
+  border: 2px solid transparent;
+  background: linear-gradient(270deg, #3d3057, #6b5c8b);
+  background-size: 400% 400%;
+  -webkit-animation: HeaderGradient 10s ease infinite;
+  -moz-animation: HeaderGradient 10s ease infinite;
+  animation: HeaderGradient 10s ease infinite;
+}
+@-webkit-keyframes HeaderGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes HeaderGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes HeaderGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* line 28, ../sass/components/_home-buttons.scss */
+.buttons__link:hover {
+  background: #d0d0d0;
+  color: #3d3057;
+  border: 2px solid #3d3057;
+  transition: .3s ease-in-out;
+}
+
+/* Portfolio
+ *
+ * /sass/components/_projects.scss
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+/* line 9, ../sass/components/_projects.scss */
+.work {
+  display: inline-block;
+  width: 44.444%;
+  /*400px*/
+  height: 25em;
+  /*400px*/
+  margin-bottom: 4em;
+  /*64px*/
+  vertical-align: top;
+  position: relative;
+}
+/* line 16, ../sass/components/_projects.scss */
+.work:nth-child(odd) {
+  margin-right: 7.111%;
+  /*64px*/
+  margin-top: -18.75em;
+  /*300px*/
+}
+/* line 20, ../sass/components/_projects.scss */
+.work:first-child {
+  margin-left: 7.111%;
+  /*64px*/
+}
+/* line 27, ../sass/components/_projects.scss */
+.work__img {
+  width: 100%;
+  /*400px*/
+  height: 25em;
+  /*400px*/
+  -webkit-transition: all 0.4s ease-in-out 0.5s;
+  -moz-transition: all 0.4s ease-in-out 0.5s;
+  -o-transition: all 0.4s ease-in-out 0.5s;
+  -ms-transition: all 0.4s ease-in-out 0.5s;
+  transition: all 0.4s ease-in-out 0.5s;
+}
+/* line 36, ../sass/components/_projects.scss */
+.work__mask {
+  background-color: rgba(61, 48, 87, 0.7);
+  width: 100%;
+  /*400px*/
+  height: 25em;
+  /*400px*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in 0.4s;
+  -moz-transition: all 0.3s ease-in 0.4s;
+  -o-transition: all 0.3s ease-in 0.4s;
+  -ms-transition: all 0.3s ease-in 0.4s;
+  transition: all 0.3s ease-in 0.4s;
+  overflow: hidden;
+  text-decoration: none;
+}
+/* line 54, ../sass/components/_projects.scss */
+.work__title {
+  opacity: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font: 2.5em "Questa", "Baskerville", Times, serif;
+  color: white;
+  margin: 4em 0 0;
+}
+/* line 62, ../sass/components/_projects.scss */
+.work__text {
+  opacity: 0;
+  text-align: center;
+  font: 1.2em "Source Sans Pro", "Helvetica", Arial, sans-serif;
+  color: white;
+  width: 90%;
+  /*360px*/
+  margin: 1em auto;
+}
+/* line 70, ../sass/components/_projects.scss */
+.work__more {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  width: 100%;
+  /*400px*/
+  height: 25em;
+  /*400px*/
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0;
+}
+/* line 83, ../sass/components/_projects.scss */
+.work:hover .work__mask, .work:focus .work__mask {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+  width: 100%;
+  /*400px*/
+  height: 25em;
+  /*400px*/
+}
+/* line 95, ../sass/components/_projects.scss */
+.work:hover .work__img, .work-focus .work__img {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+}
+/* line 102, ../sass/components/_projects.scss */
+.work:hover .work__title, .work:focus .work__title {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+/* line 107, ../sass/components/_projects.scss */
+.work:hover .work__text, .work:focus .work__text {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+/* line 112, ../sass/components/_projects.scss */
+.work:hover .work__more, .work:focus .work__more {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+/* Portfolio
+ *
+ * /sass/components/_project.scss
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+/* line 10, ../sass/components/_project.scss */
+.project__title {
+  font: 2em "Questa", "Baskerville", Times, serif;
+  margin-bottom: 1.5em;
+}
+/* line 14, ../sass/components/_project.scss */
+.project__block {
+  margin-bottom: 4.5em;
+}
+/* line 17, ../sass/components/_project.scss */
+.project__subtitle {
+  font: 1.4em "Source Sans Pro", "Helvetica", Arial, sans-serif;
+  margin-bottom: 1.2em;
+}
+/* line 21, ../sass/components/_project.scss */
+.project__text {
+  margin-bottom: 1em;
+}
+/* line 24, ../sass/components/_project.scss */
+.project__figure {
+  width: 54.222%;
+  /*488px*/
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 4.5em;
+}
+/* line 30, ../sass/components/_project.scss */
+.project__img {
+  width: 54.222%;
+  /*488px*/
+  height: auto;
+}
+
+/* line 37, ../sass/components/_project.scss */
+.button {
+  margin: 5em auto;
+  text-align: center;
+}
+/* line 40, ../sass/components/_project.scss */
+.button__link {
+  text-decoration: none;
+  display: inline-block;
+  color: #d0d0d0;
+  padding: 0.8em 1em;
+  text-align: center;
+  margin: 0 1.5em;
+  border: 2px solid transparent;
+  width: 27.777%;
+  /*250px*/
+}
+/* line 50, ../sass/components/_project.scss */
+.button__link:hover {
+  background: #d0d0d0;
+  color: #3d3057;
+  border: 2px solid #3d3057;
+  transition: .3s ease;
+}
+
+/* Portfolio
+ *
+ * /sass/components/_single-project.scss
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+/* line 13, ../sass/components/_single-project.scss */
+.project__title {
+  margin-top: 2em;
+}
+/* line 16, ../sass/components/_single-project.scss */
+.project__type {
+  display: block;
+  font-size: 0.5em;
+}
+/* line 21, ../sass/components/_single-project.scss */
+.project__button {
+  display: block;
+  width: 22.222%;
+  /*200px*/
+  margin: 2em auto;
+}
+/* line 25, ../sass/components/_single-project.scss */
+.project__button--link {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.2em;
+  text-align: center;
+  background: #3d3057;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+/* line 35, ../sass/components/_single-project.scss */
+.project__button--link:hover {
+  background: #B39DC7;
+  transition: background .5s ease;
+}
+
+/* line 42, ../sass/components/_single-project.scss */
+.part {
+  margin: 2em 0;
+}
+/* line 45, ../sass/components/_single-project.scss */
+.part__first--left {
+  display: inline-block;
+  width: 47%;
+  vertical-align: middle;
+}
+/* line 50, ../sass/components/_single-project.scss */
+.part__first--right {
+  display: inline-block;
+  width: 47%;
+  vertical-align: middle;
+  margin-left: 5%;
+}
+/* line 57, ../sass/components/_single-project.scss */
+.part__second {
+  display: inline-block;
+  width: 47%;
+}
+/* line 62, ../sass/components/_single-project.scss */
+.part__third--right {
+  display: inline-block;
+  vertical-align: middle;
+  width: 47%;
+  margin-left: 5%;
+}
+/* line 68, ../sass/components/_single-project.scss */
+.part__third--left {
+  display: inline-block;
+  vertical-align: middle;
+  width: 47%;
+}
+/* line 74, ../sass/components/_single-project.scss */
+.part__fourth {
+  display: inline-block;
+  width: 47%;
+}
+
+/* Portfolio
+ *
+ * /sass/components/_cv.scss
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+/* line 9, ../sass/components/_cv.scss */
+.cv {
+  position: relative;
+  margin: 0 auto;
+}
+/* line 12, ../sass/components/_cv.scss */
+.cv-top {
+  margin-bottom: 12.5em;
+  /*200px*/
+}
+/* line 15, ../sass/components/_cv.scss */
+.cv__title {
+  font-family: "Questa", "Baskerville", Times, serif;
+  position: absolute;
+  top: -6.25em;
+  /*100px*/
+  left: 11.111%;
+  /*100px*/
+  color: white;
+  font-size: 2em;
+}
+/* line 23, ../sass/components/_cv.scss */
+.cv__figure {
+  margin-bottom: 6.25em;
+  /*100px*/
+}
+/* line 26, ../sass/components/_cv.scss */
+.cv__img {
+  display: block;
+  width: 33.333%;
+  /*300px*/
+  height: auto;
+  margin: 0 auto;
+  position: absolute;
+  top: -1.562em;
+  /*25px*/
+  right: 16.666%;
+  /*150px*/
+}
+/* line 35, ../sass/components/_cv.scss */
+.cv-section {
+  margin-bottom: 1.875em;
+  /*30px*/
+}
+/* line 38, ../sass/components/_cv.scss */
+.cv__sectionTitle {
+  margin-bottom: 1em;
+  font: 1.8em "Questa", "Baskerville", Times, serif;
+  color: #3d3057;
+}
+/* line 43, ../sass/components/_cv.scss */
+.cv__list {
+  margin-bottom: 1.875em;
+}
+/* line 45, ../sass/components/_cv.scss */
+.cv__list-title {
+  font-size: 1.5em;
+  font-family: "Questa", "Baskerville", Times, serif;
+}
+/* line 49, ../sass/components/_cv.scss */
+.cv__list-item {
+  margin-bottom: 0.625em;
+  /*10px*/
+}
+/* line 53, ../sass/components/_cv.scss */
+.cv__git {
+  display: inline-block;
+  text-align: center;
+  width: 11.111%;
+  /*100px*/
+  margin: 0 auto;
+  text-decoration: none;
+  color: #3d3057;
+}
+/* line 63, ../sass/components/_cv.scss */
+.cv__git--icon {
+  display: block;
+  width: 100%;
+  /*100px*/
+  margin: 0 auto;
+}
+/* line 70, ../sass/components/_cv.scss */
+.cv__git:hover, .cv__git:focus {
+  color: #998bb6;
+  transition: .3s ease;
+}
+
+/* line 76, ../sass/components/_cv.scss */
+.left, .right {
+  display: inline-block;
+  width: 42.222%;
+  /*380px*/
+  vertical-align: top;
+  margin-bottom: 1.875em;
+  /*30px*/
+}
+
+/* line 82, ../sass/components/_cv.scss */
+.left {
+  margin-right: 12.222%;
+  /*110px*/
+  margin-top: 6.25em;
+  /*100px*/
+}
+
+/* line 87, ../sass/components/_cv.scss */
+.infos {
+  position: absolute;
+  width: 38.888%;
+  /*350px*/
+  top: 3.437em;
+  /*55px*/
+  left: 6.666%;
+  /*60px*/
+}
+/* line 92, ../sass/components/_cv.scss */
+.infos__item {
+  margin-bottom: 1em;
+  padding-left: 3.333%;
+  /*30px*/
+}
+/* line 95, ../sass/components/_cv.scss */
+.infos__item--icon {
+  font-family: 'Glyphs';
+  display: inline-block;
+  padding-right: 1.111%;
+  /*10px*/
+}
+
+/* line 105, ../sass/components/_cv.scss */
+.item__title, .item__date {
+  display: block;
+}
+/* line 108, ../sass/components/_cv.scss */
+.item__title {
+  font-size: 1.2em;
+}
+/* line 111, ../sass/components/_cv.scss */
+.item__date {
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+}
+/* line 116, ../sass/components/_cv.scss */
+.item__star {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+}
+/* line 121, ../sass/components/_cv.scss */
+.item__star--rate {
+  font-size: 0.4em;
+}
+
+/* line 128, ../sass/components/_cv.scss */
+.competences {
+  margin-top: 4.375em;
+  /*70px*/
+}
+
+/* line 131, ../sass/components/_cv.scss */
+.experience {
+  margin-top: 10px;
+  /*10px*/
+}
+
+/* Portfolio
+ *
+ * /sass/components/_contact.scss
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+/* line 10, ../sass/components/_contact.scss */
+.content__title {
+  width: 400px;
+  font-size: 2em;
+  font-family: "Questa", "Baskerville", Times, serif;
+  margin-bottom: 1.5em;
+  margin-top: 7em;
+}
+
+/* line 19, ../sass/components/_contact.scss */
+.wpcf7-form {
+  width: 500px;
+}
+
+/* line 23, ../sass/components/_contact.scss */
+p {
+  font-size: 1.1em;
+}
+
+/* line 27, ../sass/components/_contact.scss */
+p:nth-child(6) {
+  margin-bottom: 0.8em;
+}
+
+/* line 30, ../sass/components/_contact.scss */
+input {
+  margin-bottom: 1.8em;
+}
+
+/* line 34, ../sass/components/_contact.scss */
+.wpcf7-form-control {
+  width: 500px;
+  height: 45px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  vertical-align: bottom;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #3d3057;
+}
+
+/* line 44, ../sass/components/_contact.scss */
+.wpcf7-form-control:nth-child(3) {
+  margin-bottom: 1.5em;
+}
+
+/* line 47, ../sass/components/_contact.scss */
+.wpcf7-form-control:focus {
+  border-bottom: 2px solid #5D5176;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3);
+  transition: color .8s ease;
+}
+
+/* line 52, ../sass/components/_contact.scss */
+.wpcf7-form-control[placeholder] {
+  font-size: 1em;
+}
+
+/* line 56, ../sass/components/_contact.scss */
+.wpcf7-textarea {
+  width: 500px;
+  padding: 20px;
+  border: none;
+  background: #D5D1D6;
+  resize: none;
+  height: 100px;
+  margin-bottom: 2em;
+}
+
+/* line 65, ../sass/components/_contact.scss */
+.wpcf7-textarea:focus {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+  transition: .8s ease;
+}
+
+/* line 70, ../sass/components/_contact.scss */
+.wpcf7-submit {
+  border: none;
+  background: #3d3057;
+  width: 250px;
+  color: white;
+  height: 40px;
+  font-size: 1em;
+  line-height: 1em;
+  padding: 5px;
+}

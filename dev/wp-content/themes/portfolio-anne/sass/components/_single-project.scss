@@ -1,0 +1,79 @@
+/* Portfolio
+ *
+ * /sass/components/_single-project.scss
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+
+.project {
+    &__first {
+
+    }
+    &__title {
+        margin-top: 2em;
+    }
+    &__type {
+        display: block;
+        font-size: 0.5em;
+    } 
+
+    &__button {
+        display: block;
+        width: 22.222%; /*200px*/
+        margin: 2em auto;
+        &--link {
+            display: inline-block;
+            width: 100%;
+            font-size:1.2em;
+            text-align: center;
+            background: $darkColor;
+            color:white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+        }
+        &--link:hover {
+            background: #B39DC7;
+            transition: background .5s ease;
+        }
+    }
+}
+
+.part {
+    margin: 2em 0;
+    &__first {
+        &--left {
+            display: inline-block;
+            width: 47%;
+            vertical-align: middle;
+        }
+        &--right {
+            display: inline-block;
+            width: 47%;
+            vertical-align: middle;
+            margin-left: 5%;
+        }
+    }
+    &__second {
+        display: inline-block;
+        width: 47%;
+    }
+    &__third {
+        &--right {
+            display: inline-block;
+            vertical-align: middle;
+            width: 47%;
+            margin-left: 5%;
+        }
+        &--left {
+            display: inline-block;
+            vertical-align: middle;
+            width: 47%;
+        }
+    }
+    &__fourth {
+            display: inline-block;
+            width: 47%;
+    }
+}
+
