@@ -1,0 +1,56 @@
+/* Portfolio
+ *
+ * /sass/components/_content.scss
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+
+ .project {
+     &__title {
+         font: 2em $headingStack;
+         margin-bottom: 1.5em;
+     }
+     &__block {
+        margin-bottom: 4.5em;
+     }
+     &__subtitle {
+        font: 1.4em $laborStack;
+        margin-bottom: 1.2em;
+     }
+     &__text {
+        margin-bottom: 1em;
+     }
+     &__figure {
+        width: 488px;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 4.5em;
+     }
+     &__img {
+         width: 488px;
+         height: auto;
+
+     }
+ }
+
+ .button {
+     margin: 5em auto;
+     text-align: center;
+     &__link {
+         text-decoration: none;
+         display: inline-block;
+         color: $lightColor;
+         padding: 0.8em 1em;
+         text-align: center;
+         margin: 0 1.5em;
+         border: 2px solid transparent;
+         width: 250px;
+     }
+     &__link:hover {
+         background: $lightColor;
+         color: $darkColor;
+         border: 2px solid $darkColor;
+         transition: .3s ease;
+     }
+ }

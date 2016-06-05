@@ -1,0 +1,76 @@
+/* Portfolio
+ *
+ * /sass/components/_header.scss
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+
+.header {
+    height: 250px;
+    position: relative;
+    margin-bottom: 150px;
+    
+    &__logo {
+        display: block;
+        background: url("../assets/img/logo.png") center no-repeat;
+        background-size: contain;
+        width: 236px;
+        height: 191px;
+        text-indent: -9999px;
+        float:left;
+        position: absolute;
+        top: 70px;
+        left: 200px;
+    }
+    &__nav {
+        float: right;
+        margin: 8em 200px 0 0;
+    }
+    &__link {
+        display: inline-block;
+        width: 115px;
+        text-decoration: none;
+        color: $lightColor;
+        font: 1.5em $laborStack;
+        padding: 0.5em 1em;
+        margin: 0 1em;
+        position: relative;
+
+        text-align: center;
+    }
+    &__link:hover, .header__link:focus {
+        background: $lightColor;
+        color: $darkColor;
+        transition: .3s ease;
+    }
+    &__link:hover:before {
+        content:"";
+        display: block;
+        position: absolute;
+        top: -30px;
+        left:0;
+        width: 100%;
+        height: 0px;
+        border-bottom: 30px solid $lightColor;
+        border-right: 115px solid transparent;
+        margin-bottom: 1em;
+    }
+    &__link:hover:after {
+        content:"";
+        display: block;
+        position: absolute;
+        bottom: -53px;
+        left:0;
+        width: 100%;
+        height: 0px;
+        border-top: 30px solid $lightColor;
+        border-left: 115px solid transparent;
+        margin-bottom: 1em;
+    }
+}
+
+.header:before {
+    @include kaduk('bottom-left', 20deg, 200%);
+    @include gradient();
+}

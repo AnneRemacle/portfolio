@@ -1,0 +1,61 @@
+/* Portfolio
+ *
+ * /sass/components/_content.scss
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+
+ .content {
+     width: 900px;
+     margin: 0 auto;
+ }
+
+.section {
+    &__title {
+        width: 400px;
+        font: 2em $headingStack;
+        margin-bottom: 1.5em;
+        float:left;
+        margin-right: 64px;
+    }
+}
+
+
+.multimedia {
+    width: 100%;
+    height: 1400px;
+    position: relative;;
+    margin-top: -300px;
+    margin-bottom: -200px;
+    color:white;
+    padding-top: 2.5em;
+    overflow: hidden;
+    //@include gradient();
+    &__block {
+        width: 900px;
+        margin: 0 auto;
+        position: absolute;
+        left: 200px;
+        top: 550px;
+    }
+    &-bottom, &-top {
+        height: 650px;
+        position: relative;
+        overflow: hidden;
+
+    }
+    &-bottom:after {
+        @include kaduk('bottom-right', 20deg, 200%);
+        @include gradient();
+    }
+    &-top:before {
+        @include kaduk('top-left', 20deg, 200%);
+        @include gradient();
+    }
+
+}
+
+.multimedia:before {
+
+}

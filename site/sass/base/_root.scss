@@ -1,0 +1,14 @@
+/* Portfolio
+ *
+ * /sass/base/_root.scss - Base styles for root element
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+
+body {
+    background: $lightColor;
+    font: 100%/1.7 $laborStack;
+    width: 100%;
+    overflow-x: hidden;
+}

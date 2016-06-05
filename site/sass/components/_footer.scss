@@ -1,0 +1,44 @@
+/* Portfolio
+ *
+ * /sass/components/_footer.scss
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+
+ .footer {
+     height: 500px;
+     position: relative;
+     //margin-top: 300px;
+     //background: $darkColor;
+     overflow: hidden;
+     &__title {
+         color: $lightColor;
+         font: 1.5em $headingStack;
+         margin-left: 4em;
+     }
+     &__socials {
+         margin-left: 5.5em;
+     }
+     &__link {
+         display: inline-block;
+         text-decoration: none;
+         color: $lightColor;
+         font-size: 1.5em;
+         padding: 1em 0.5em;
+     }
+ }
+
+
+
+ .footer:before {
+     @include kaduk('top-left', 20deg, 200%);
+     @include gradient();
+
+ }
+
+ .position {
+     position: absolute;
+     top:250px;
+     left:150px;
+ }

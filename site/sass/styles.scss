@@ -1,0 +1,54 @@
+/* Portfolio
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Anne
+ * started at 26/04/2016
+ */
+
+ @import "compass";
+
+// 1. Settings - Variables globales
+
+@import "settings/colors";
+@import "settings/fonts";
+//@import "settings/sizes";
+
+// 2. Tools - Mixins globaux, functions & outils
+@import "tools/utils";
+@import "white-sass/whitecube";
+
+// 3. Generic - Style de remise à zéro (reset, normalize…)
+@import "generic/meyer-reset";
+@import "generic/box-sizing";
+
+// 4. Base - Éléments bruts
+@import "base/root";
+
+// 5. Objects - Éléments de mise en forme non-cosmétique
+
+
+// 6. Components - Design des composants, morceaux d'UI
+@import "components/header";
+@import "components/content";
+@import "components/footer";
+
+    // Home
+    @import "components/home-me";
+    @import "components/home-buttons";
+
+    // Projects
+    @import "components/projects";
+
+    // Project
+    @import "components/project";
+
+    // CV
+    @import "components/cv";
+
+    // Contact
+    @import "components/contact";
+
+// 7. Trumps - Styles spécifiques à un élément
+
+// ----- tmp

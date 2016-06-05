@@ -1,0 +1,74 @@
+/* Portfolio
+ *
+ * /sass/components/_contact.scss
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+
+.content {
+    &__title {
+        width: 400px;
+        font-size: 2em;
+        font-family: $headingStack;
+        margin-bottom: 1.5em;
+        margin-top: 2em;
+    }
+}
+
+ .form {
+     width: 500px;
+
+     &-group {
+        margin-bottom: 1.3em;
+     }
+     &__label {
+        display: block;
+        &--textarea {
+            margin-bottom: 0.8em;
+        }
+     }
+     &__input {
+         width: 500px;
+         height: 45px;
+         padding-top: 15px;
+         padding-bottom: 5px;
+         vertical-align: bottom;
+         border: none;
+         background: transparent;
+         border-bottom: 1px solid $darkColor;
+         &--textarea {
+             width: 500px;
+             padding: 20px;
+             border: none;
+             background: #D5D1D6;
+             resize: none;
+
+
+         }
+         &--textarea[placeholder] {
+             font-size: 1em;
+         }
+         &--textarea:focus {
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+            transition: .8s ease;
+         }
+     }
+     &__input[placeholder] {
+         font-size: 1em;
+     }
+     &__input:focus {
+         border-bottom: 2px solid #5D5176;
+         box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3);
+         transition: color .8s ease;
+     }
+     &__button {
+         border:none;
+         background: $darkColor;
+         width: 250px;
+         color:white;
+         height: 40px;
+         font-size: 1em;
+     }
+
+ }
