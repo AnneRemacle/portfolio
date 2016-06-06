@@ -149,3 +149,11 @@
     }
 }
 
+@media screen and (max-width: 540px) {
+    .project {
+        &__button {
+            width: 40%;
+        }
+    }
+}
+

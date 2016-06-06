@@ -64,3 +64,44 @@
         }
     }
  }
+
+ @media screen and (max-width: 700px) {
+    .me {
+        &__img {
+            width: 55%;
+            right: 22.5%; 
+        }
+        &__figure {
+            margin-bottom: 18em;
+        }
+        &__title {
+            width: 85%;
+        }
+        &__left {
+            display: block;
+            float: none;
+            width: 90%;
+        }
+        &__right {
+            display: block;
+            float: none;
+            width: 90%;
+        }
+        
+    }
+ }
+
+  @media screen and (max-width: 540px) {
+    .me {
+        &__img {
+            width: 70%;
+            right: 15%; 
+        }
+        &__figure {
+            margin-bottom: 18em;
+        }
+        &__title {
+            width: 100%;
+        }
+    }
+ }

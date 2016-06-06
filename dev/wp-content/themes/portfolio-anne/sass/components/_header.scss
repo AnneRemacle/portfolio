@@ -96,3 +96,29 @@
         }
     }
 }
+
+@media screen and (max-width: 700px) {
+    .header {
+        &__logo {
+        width: 25%; 
+        top: 1.5em;
+        left: 37.5%; 
+        margin-bottom: 1em;
+    }
+        &__nav {
+        float: right;
+        margin: 14em 7% 0 0; 
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .header {
+        &__logo {
+        width: 35%; 
+        top: 1.5em; 
+        left: 32.5%; 
+        margin-bottom: 1em;
+        } 
+    }
+}

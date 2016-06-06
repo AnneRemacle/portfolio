@@ -28,6 +28,17 @@
      }
  }
 
+ @media screen and (max-width: 540px) {
+    .footer {
+        &__title {
+            margin-left: 2em
+        }
+        &__socials {
+            margin-left: 3em;
+        }
+    }
+ }
+
 
 
  .footer:before {

@@ -18,7 +18,7 @@
             <div class="design__project content__work work clearfix">
                 <?php $image = get_field('presentation_img'); ?>
                 <img class="work__img" src="<?php echo $image['url']; ?>" alt="" />
-                <a href="<?php the_permalink(); ?>" title="Voir le projet CV en détails" class="work__mask">
+                <a href="<?php the_permalink(); ?>" title="" class="work__mask">
                     <h4 class="work__title"><?php the_field('project_title'); ?></h4>
                     <p class="work__text">
                         <?php the_field('project_summary'); ?>

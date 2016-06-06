@@ -386,6 +386,29 @@ body {
     margin: 12em 10% 0 0;
   }
 }
+@media screen and (max-width: 700px) {
+  /* line 102, ../sass/components/_header.scss */
+  .header__logo {
+    width: 25%;
+    top: 1.5em;
+    left: 37.5%;
+    margin-bottom: 1em;
+  }
+  /* line 108, ../sass/components/_header.scss */
+  .header__nav {
+    float: right;
+    margin: 14em 7% 0 0;
+  }
+}
+@media screen and (max-width: 540px) {
+  /* line 117, ../sass/components/_header.scss */
+  .header__logo {
+    width: 35%;
+    top: 1.5em;
+    left: 32.5%;
+    margin-bottom: 1em;
+  }
+}
 /* Portfolio
  *
  * /sass/components/_content.scss
@@ -445,7 +468,17 @@ body {
   padding: 1em 0.5em;
 }
 
-/* line 33, ../sass/components/_footer.scss */
+@media screen and (max-width: 540px) {
+  /* line 33, ../sass/components/_footer.scss */
+  .footer__title {
+    margin-left: 2em;
+  }
+  /* line 36, ../sass/components/_footer.scss */
+  .footer__socials {
+    margin-left: 3em;
+  }
+}
+/* line 44, ../sass/components/_footer.scss */
 .footer:before {
   content: "";
   display: block;
@@ -503,7 +536,7 @@ body {
     background-position: 0% 50%;
   }
 }
-/* line 39, ../sass/components/_footer.scss */
+/* line 50, ../sass/components/_footer.scss */
 .position {
   position: absolute;
   top: 15.625em;
@@ -593,6 +626,48 @@ body {
   .me__right {
     width: 45%;
     margin-right: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 70, ../sass/components/_home-me.scss */
+  .me__img {
+    width: 55%;
+    right: 22.5%;
+  }
+  /* line 74, ../sass/components/_home-me.scss */
+  .me__figure {
+    margin-bottom: 18em;
+  }
+  /* line 77, ../sass/components/_home-me.scss */
+  .me__title {
+    width: 85%;
+  }
+  /* line 80, ../sass/components/_home-me.scss */
+  .me__left {
+    display: block;
+    float: none;
+    width: 90%;
+  }
+  /* line 85, ../sass/components/_home-me.scss */
+  .me__right {
+    display: block;
+    float: none;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 540px) {
+  /* line 96, ../sass/components/_home-me.scss */
+  .me__img {
+    width: 70%;
+    right: 15%;
+  }
+  /* line 100, ../sass/components/_home-me.scss */
+  .me__figure {
+    margin-bottom: 18em;
+  }
+  /* line 103, ../sass/components/_home-me.scss */
+  .me__title {
+    width: 100%;
   }
 }
 /* Portfolio
@@ -813,6 +888,28 @@ body {
     margin-top: -12.5em;
   }
 }
+/*@media screen and (max-width: 885px) {
+    .work {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        position:relative;
+        
+        &:nth-child(odd) {
+        //margin-right: 0; 
+        margin-top: 0; 
+      }
+      &:first-child {
+        //margin-left: 0;
+      }
+      &__mask {
+        position: absolute;
+        top:0;
+        left: 0;
+      }
+    }
+}*/
 /* Portfolio
  *
  * /sass/components/_project.scss
@@ -1030,6 +1127,12 @@ body {
     width: 30%;
   }
 }
+@media screen and (max-width: 540px) {
+  /* line 154, ../sass/components/_single-project.scss */
+  .project__button {
+    width: 40%;
+  }
+}
 /* Portfolio
  *
  * /sass/components/_cv.scss
@@ -1209,6 +1312,27 @@ body {
     width: 20%;
   }
 }
+@media screen and (max-width: 700px) {
+  /* line 144, ../sass/components/_cv.scss */
+  .left, .right {
+    display: block;
+    width: 80%;
+    margin-bottom: 1.875em;
+  }
+
+  /* line 149, ../sass/components/_cv.scss */
+  .left {
+    margin-right: 0;
+    margin-top: 20em;
+  }
+
+  /* line 153, ../sass/components/_cv.scss */
+  .infos {
+    width: 55%;
+    top: 5em;
+    left: 0;
+  }
+}
 /* Portfolio
  *
  * /sass/components/_contact.scss
@@ -1324,5 +1448,16 @@ input {
   /* line 85, ../sass/components/_contact.scss */
   .wpcf7-submit {
     width: 70%;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 91, ../sass/components/_contact.scss */
+  .wpcf7-form {
+    width: 90%;
+  }
+
+  /* line 94, ../sass/components/_contact.scss */
+  .wpcf7-submit {
+    width: 90%;
   }
 }
