@@ -21,3 +21,12 @@
     }
 }
 
+@media screen and (max-width: 540px) { 
+	.section {
+		&__title {
+			float: none;
+		}
+	}
+}
+
+

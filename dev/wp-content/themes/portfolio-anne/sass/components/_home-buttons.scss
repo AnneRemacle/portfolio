@@ -32,3 +32,11 @@
         transition: .3s ease-in-out;
     }
 }
+
+@media screen and (max-width: 540px) {
+    .buttons {
+        &__link {
+            width: 50%;
+        }
+    }
+}

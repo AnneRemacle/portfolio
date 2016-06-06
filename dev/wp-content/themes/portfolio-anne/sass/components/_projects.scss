@@ -128,20 +128,19 @@
     }
 }
 
-/*@media screen and (max-width: 885px) {
+@media screen and (max-width: 540px) {
     .work {
         display: block;
         width: 80%;
-        margin: 0 auto;
+        margin: 0;
         margin-bottom: 2em;
         position:relative;
-        
+        margin-left: 10%;
         &:nth-child(odd) {
-        //margin-right: 0; 
         margin-top: 0; 
       }
       &:first-child {
-        //margin-left: 0;
+
       }
       &__mask {
         position: absolute;
@@ -149,6 +148,6 @@
         left: 0;
       }
     }
-}*/
+}
 
 

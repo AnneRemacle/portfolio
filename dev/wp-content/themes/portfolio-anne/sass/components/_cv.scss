@@ -32,7 +32,7 @@
          top:-1.562em; /*25px*/ 
          right: 16.666%; /*150px*/
      }
-     &-section {
+     &__section {
          margin-bottom: 1.875em; /*30px*/
      }
      &__sectionTitle {
@@ -57,16 +57,13 @@
          margin: 0 auto;
          text-decoration: none;
          color: $darkColor;
-         &-div {
-           
-         }
+     }
          &--icon {
              display: block;
               width: 100%; /*100px*/ 
               margin: 0 auto;
               
          }
-     }
      &__git:hover, &__git:focus {
          color: #998bb6;
          transition: .3s ease;
@@ -154,5 +151,24 @@
         width: 55%; 
         top: 5em;
         left: 0; 
+    }
+}
+
+@media screen and (max-width: 540px) { 
+    .cv {
+        &__img {
+            width: 40%;
+            top:-3em; 
+        }
+        &__git {
+            width: 30%;
+        }
+    }
+    .infos {
+        width: 70%;
+        top: 8em;
+    }
+    .left {
+     margin-top: 24em; 
     }
 }
