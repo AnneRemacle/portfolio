@@ -144,12 +144,12 @@
         border-right: 95px solid transparent;
          border-bottom: 25px solid $lightColor;
          top: -25px;
-    }
-    &__link:hover:after {
-        border-left: 95px solid transparent;
-         border-top: 25px solid $lightColor;
-         bottom: -45px;
-    }
+        }
+        &__link:hover:after {
+            border-left: 95px solid transparent;
+             border-top: 25px solid $lightColor;
+             bottom: -45px;
+        }
     }
  }
 
@@ -180,6 +180,33 @@
             }
             &__link:hover:after {
             bottom: -41px;
+            }
+        }
+  }
+
+@media screen and (min-width:320px) and (max-width: 409px) {
+    .header {
+            &__logo {
+                top: 1em;
+            }
+            &__nav {
+                margin: 12em 5% 0 0; 
+            }
+            &__link {
+            width: 75px;
+            font: 1em $laborStack;
+            padding: 0.5em 0.5em;
+            margin: 0 0.5em;
+            }
+            &__link:hover:before {
+            border-right: 75px solid transparent;
+             border-bottom: 25px solid $lightColor;
+             top: -25px;
+            }
+            &__link:hover:after {
+                border-left: 75px solid transparent;
+                 border-top: 25px solid $lightColor;
+                 bottom: -41px;
             }
         }
   }

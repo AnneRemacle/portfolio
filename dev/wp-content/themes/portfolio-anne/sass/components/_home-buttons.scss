@@ -33,7 +33,7 @@
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (min-width: 320px) and (max-width: 540px ) {
     .buttons {
         &__link {
             width: 50%;

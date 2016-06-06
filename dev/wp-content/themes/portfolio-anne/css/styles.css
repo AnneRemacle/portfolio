@@ -220,6 +220,7 @@ body {
   font: 100%/1.7 "Source Sans Pro", "Helvetica", Arial, sans-serif;
   width: 100%;
   overflow-x: hidden;
+  min-width: 320px;
 }
 
 /* Portfolio
@@ -470,6 +471,35 @@ body {
     bottom: -41px;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 409px) {
+  /* line 189, ../sass/components/_header.scss */
+  .header__logo {
+    top: 1em;
+  }
+  /* line 192, ../sass/components/_header.scss */
+  .header__nav {
+    margin: 12em 5% 0 0;
+  }
+  /* line 195, ../sass/components/_header.scss */
+  .header__link {
+    width: 75px;
+    font: 1em "Source Sans Pro", "Helvetica", Arial, sans-serif;
+    padding: 0.5em 0.5em;
+    margin: 0 0.5em;
+  }
+  /* line 201, ../sass/components/_header.scss */
+  .header__link:hover:before {
+    border-right: 75px solid transparent;
+    border-bottom: 25px solid #d0d0d0;
+    top: -25px;
+  }
+  /* line 206, ../sass/components/_header.scss */
+  .header__link:hover:after {
+    border-left: 75px solid transparent;
+    border-top: 25px solid #d0d0d0;
+    bottom: -41px;
+  }
+}
 /* Portfolio
  *
  * /sass/components/_content.scss
@@ -495,7 +525,7 @@ body {
   /*64px*/
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (min-width: 320px) and (max-width: 540px) {
   /* line 26, ../sass/components/_content.scss */
   .section__title {
     float: none;
@@ -623,6 +653,20 @@ body {
     margin-left: 5%;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 409px) {
+  /* line 66, ../sass/components/_footer.scss */
+  .footer {
+    height: 25em;
+  }
+  /* line 68, ../sass/components/_footer.scss */
+  .footer__title {
+    font: 1.2em "Questa", "Baskerville", Times, serif;
+  }
+  /* line 71, ../sass/components/_footer.scss */
+  .footer__link {
+    font-size: 1em;
+  }
+}
 /* Portfolio
  *
  * /sass/components/_home-me.scss
@@ -733,7 +777,7 @@ body {
     width: 90%;
   }
 }
-@media screen and (max-width: 540px) {
+@media screen and (min-width: 320px) and (max-width: 699px) {
   /* line 96, ../sass/components/_home-me.scss */
   .me__img {
     width: 70%;
@@ -822,7 +866,7 @@ body {
   transition: .3s ease-in-out;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (min-width: 320px) and (max-width: 540px) {
   /* line 38, ../sass/components/_home-buttons.scss */
   .buttons__link {
     width: 50%;
@@ -991,6 +1035,21 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 539px) {
+  /* line 155, ../sass/components/_projects.scss */
+  .work__title {
+    margin: 0.5em 0 0 0;
+    font-size: 1.8em;
+  }
+  /* line 159, ../sass/components/_projects.scss */
+  .work__text {
+    font-size: 0.8em;
+  }
+  /* line 162, ../sass/components/_projects.scss */
+  .work__more {
+    font-size: 0.8em;
   }
 }
 /* Portfolio
@@ -1216,7 +1275,7 @@ body {
     width: 40%;
   }
 }
-@media screen and (max-width: 410px) {
+@media screen and (min-width: 320px) and (max-width: 539px) {
   /* line 162, ../sass/components/_single-project.scss */
   .project__button {
     width: 60%;
@@ -1460,6 +1519,22 @@ body {
     top: 8em;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 534px) {
+  /* line 185, ../sass/components/_cv.scss */
+  .cv__img {
+    width: 60%;
+    top: -3em;
+  }
+  /* line 189, ../sass/components/_cv.scss */
+  .cv__git {
+    width: 50%;
+  }
+
+  /* line 193, ../sass/components/_cv.scss */
+  .infos {
+    font-size: 0.9em;
+  }
+}
 /* Portfolio
  *
  * /sass/components/_contact.scss
@@ -1586,5 +1661,17 @@ input {
   /* line 94, ../sass/components/_contact.scss */
   .wpcf7-submit {
     width: 90%;
+  }
+}
+@media screen and (max-width: 540px) and (min-width: 320px) {
+  /* line 100, ../sass/components/_contact.scss */
+  .wpcf7-form {
+    width: 100%;
+  }
+
+  /* line 103, ../sass/components/_contact.scss */
+  .wpcf7-submit {
+    width: 100%;
+    font-size: 1em;
   }
 }

@@ -96,4 +96,13 @@ input {
     }
 }
 
+@media screen and (max-width: 540px) and (min-width: 320px) {
+    .wpcf7-form {
+     width: 100%; 
+    }
+    .wpcf7-submit {
+    width: 100%; 
+    font-size: 1em;
+    }
+}
 
