@@ -28,19 +28,6 @@
      }
  }
 
- @media screen and (max-width: 540px) {
-    .footer {
-        &__title {
-            margin-left: 2em
-        }
-        &__socials {
-            margin-left: 3em;
-        }
-    }
- }
-
-
-
  .footer:before {
      @include kaduk('top-left', 20deg, 200%);
      @include gradient();
@@ -51,4 +38,26 @@
      position: absolute;
      top:15.625em; /*250px*/
      left:16.666%; /*150px*/
+ }
+
+  @media screen and (max-width: 540px) {
+    .footer {
+        &__title {
+            margin-left: 2em
+        }
+        &__socials {
+            margin-left: 3em;
+        }
+    }
+ }
+
+ @media screen and (max-width: 410px) {
+    .footer {
+        &__title {
+            margin-left: 5%;
+        }
+        &__socials {
+            margin-left: 5%;
+        }
+    }
  }

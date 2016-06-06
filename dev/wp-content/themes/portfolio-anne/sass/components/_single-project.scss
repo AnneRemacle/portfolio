@@ -157,3 +157,23 @@
     }
 }
 
+ @media screen and (max-width: 410px) {
+    .project {
+        &__button {
+            width: 60%;
+        }
+    }
+    .part {
+        &__first {
+            &--img {
+                width: 90%;
+            }
+        &__third {
+            &--img {
+                width: 70%;
+            }
+        }
+        }
+    }
+ }
+

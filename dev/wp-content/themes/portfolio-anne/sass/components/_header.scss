@@ -152,3 +152,34 @@
     }
     }
  }
+
+ @media screen and (max-width: 535px) {
+    .header {
+        &__logo {
+            margin-top: 0;
+        }
+        &__nav {
+            margin: 14em 10% 0 0; 
+        }
+        &__link {
+            font-size: 1em;
+        }
+        &__link:hover:after {
+         bottom: -41px;
+        }
+    }
+ }
+
+  @media screen and (max-width: 410px) {
+        .header {
+            &__logo {
+                top: 1em;
+            }
+            &__nav {
+                margin: 11em 5% 0 0; 
+            }
+            &__link:hover:after {
+            bottom: -41px;
+            }
+        }
+  }
