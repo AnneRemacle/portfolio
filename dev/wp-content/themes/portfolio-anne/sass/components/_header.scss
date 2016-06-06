@@ -125,3 +125,30 @@
         }
     }
 }
+
+@media screen and (max-width: 535px) {
+    .header {
+        &__logo {
+
+        }
+        &__nav {
+            margin: 14em 15% 0 0; 
+        }
+        &__link {
+        width: 95px;
+        font: 1.3em $laborStack;
+        padding: 0.5em 0.8em;
+        margin: 0 0.8em;
+        }
+        &__link:hover:before {
+        border-right: 95px solid transparent;
+         border-bottom: 25px solid $lightColor;
+         top: -25px;
+    }
+    &__link:hover:after {
+        border-left: 95px solid transparent;
+         border-top: 25px solid $lightColor;
+         bottom: -45px;
+    }
+    }
+ }

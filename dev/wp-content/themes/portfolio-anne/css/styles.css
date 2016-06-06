@@ -413,6 +413,31 @@ body {
     margin: 12em 7% 0 0;
   }
 }
+@media screen and (max-width: 535px) {
+  /* line 134, ../sass/components/_header.scss */
+  .header__nav {
+    margin: 14em 15% 0 0;
+  }
+  /* line 137, ../sass/components/_header.scss */
+  .header__link {
+    width: 95px;
+    font: 1.3em "Source Sans Pro", "Helvetica", Arial, sans-serif;
+    padding: 0.5em 0.8em;
+    margin: 0 0.8em;
+  }
+  /* line 143, ../sass/components/_header.scss */
+  .header__link:hover:before {
+    border-right: 95px solid transparent;
+    border-bottom: 25px solid #d0d0d0;
+    top: -25px;
+  }
+  /* line 148, ../sass/components/_header.scss */
+  .header__link:hover:after {
+    border-left: 95px solid transparent;
+    border-top: 25px solid #d0d0d0;
+    bottom: -45px;
+  }
+}
 /* Portfolio
  *
  * /sass/components/_content.scss
